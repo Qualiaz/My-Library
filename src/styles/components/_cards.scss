@@ -1,0 +1,36 @@
+.main__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background: linear-gradient(
+    90deg,
+    $primary-container-color 0%,
+    rgba(224, 89, 8, 1) 50%,
+    $primary-container-color 100%
+  );
+
+  padding: 10px;
+
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+  &-box {
+    display: flex;
+    justify-content: center;
+
+    background-color: $on-primary-container-color;
+
+    padding: 8px;
+    width: 220px;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+
+    & > span {
+      text-align: center;
+    }
+  }
+}

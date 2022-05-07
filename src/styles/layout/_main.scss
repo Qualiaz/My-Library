@@ -1,0 +1,22 @@
+.main__container {
+  // width: clamp(340px, 60vw, 1080px);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  gap: 30px;
+}
+
+// TABLET / PHONE
+
+@media only screen and (max-width: 977px) {
+  .main__container {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .main__container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.header__form {
+  &-el {
+    & > input[type="text"] {
+      @include form-boxes;
+
+      &:focus {
+        outline: none;
+
+        outline: 2px solid $focus-color;
+      }
+
+      &::placeholder {
+        opacity: 0.7;
+        color: inherit;
+        font-family: inherit;
+      }
+    }
+  }
+}

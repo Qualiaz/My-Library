@@ -1,0 +1,13 @@
+@mixin form-boxes {
+  border: none;
+  background: $primary-container-color;
+  border-radius: 10px;
+  height: 28px;
+  min-width: 130px;
+  padding: 5px;
+  text-align: center;
+  color: $text-color;
+  font-family: $primary-font;
+  font-size: 1.8rem;
+  border: 1px solid rgb(114, 50, 8);
+}

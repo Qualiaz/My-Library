@@ -1,0 +1,52 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 3rem;
+    padding: 2rem;
+    width: clamp(1000px, 50%, 1060px);
+    min-width: (520px);
+  }
+
+  &__logo {
+    font-size: 2.4rem;
+    font-family: $primary-font;
+    color: $white;
+
+    & > h1 {
+      text-align: center;
+      min-width: 242px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &-el > input[type="text"] {
+      width: 100px;
+    }
+  }
+}
+
+// PHONE
+
+@media only screen and (max-width: 977px) {
+  .header__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: clamp(00px, 50vw, 1060px);
+  }
+
+  .header__form {
+    flex-direction: column;
+    align-items: center;
+    &-el > input[type="text"],
+    button {
+      width: 300px;
+    }
+  }
+}

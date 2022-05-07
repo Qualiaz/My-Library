@@ -1,0 +1,52 @@
+// HEADER FORM BUTTONS //
+.header__form-btn {
+  min-width: 50px;
+  height: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  & > svg {
+    box-shadow: 0px 0px 4px 2px $primary-container-color;
+    border-radius: 3px;
+
+    &:hover {
+      box-shadow: 0px 0px 3px 1px $white;
+    }
+  }
+}
+
+.header__form-status {
+  @include form-boxes;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: none;
+  box-shadow: inset 0px 0px 1px 2px $primary-container-color;
+
+  &:hover {
+    box-shadow: inset 0px 0px 5px 3px $focus-color;
+  }
+}
+
+// MAIN CARD BUTTONS //
+
+.main__card-box {
+  & > button {
+    background: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &--status:hover {
+    box-shadow: inset 0px 0px 1px 2px $focus-color;
+  }
+  &--delete:hover {
+    background-color: $delete-color;
+    box-shadow: inset 0px 0px 1px 2px $on-primary-container-color;
+  }
+}
