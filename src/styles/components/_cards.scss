@@ -1,5 +1,9 @@
+// #mainCard {
+//   display: none;
+// }
+
 .main__card {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -30,7 +34,13 @@
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 
     & > span {
+      display: inline-block;
       text-align: center;
+
+      &:focus {
+        outline: 1px solid $primary-color;
+        border-radius: 2px;
+      }
     }
   }
 }

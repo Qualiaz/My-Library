@@ -1,4 +1,8 @@
 .header__form {
+  &--hide {
+    display: none;
+  }
+
   &-el {
     & > input[type="text"] {
       @include form-boxes;

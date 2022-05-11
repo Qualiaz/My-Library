@@ -1,7 +1,7 @@
 // HEADER FORM BUTTONS //
 .header__form-btn {
-  min-width: 50px;
-  height: 50px;
+  // min-width: 50px;
+  // height: 50px;
   border: none;
   background: none;
   cursor: pointer;
@@ -44,9 +44,11 @@
 
   &--status:hover {
     box-shadow: inset 0px 0px 1px 2px $focus-color;
+    cursor: pointer;
   }
   &--delete:hover {
     background-color: $delete-color;
     box-shadow: inset 0px 0px 1px 2px $on-primary-container-color;
+    cursor: pointer;
   }
 }

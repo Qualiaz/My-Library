@@ -9,37 +9,38 @@
   </head>
   <body>
     <div class="container">
-      <header class="header header__container">
+      <header class="header header__container" id="headerContainer">
         <div class="header__logo"><h1>My Library</h1></div>
         <form action="#" method="post" class="header__form" autocomplete="off">
-          <div class="header__form-el">
+          <div class="header__form-el header__form--hide">
             <input
               type="text"
               name="book"
               class="header__form-book"
+              id="formBook"
               placeholder="Book"
             />
           </div>
-          <div class="header__form-el">
+          <div class="header__form-el header__form--hide">
             <input
               type="text"
               name="author"
               class="header__form-author"
+              id="formAuthor"
               placeholder="Author"
             />
           </div>
-          <div class="header__form-el">
+          <div class="header__form-el header__form--hide">
             <input
               type="text"
               name="pages"
               class="header__form-pages"
+              id="formPages"
               placeholder="Pages"
             />
           </div>
-          <div class="header__form-el">
-            <button class="header__form-status" id="btnStatus">
-              <span>Read</span>
-            </button>
+          <div class="header__form-el header__form--hide">
+            <button class="header__form-status" id="formBtnStatus">Read</button>
           </div>
           <button class="header__form-btn" id="btnAddBook">
             <svg
@@ -57,135 +58,29 @@
           </button>
         </form>
       </header>
-      <main class="main__container">
-        <div class="main__card">
+      <main class="main__container" id="mainContainer">
+        <div class="main__card" id="mainCard">
           <div class="main__card-box main__card-box--book">
-            <span>Book</span>
+            <span class="main__card--book" contenteditable="true">Book</span>
           </div>
           <div class="main__card-box main__card-box--author">
-            <span>Author</span>
+            <span class="main__card--author" contenteditable="true"
+              >Author</span
+            >
           </div>
           <div class="main__card-box main__card-box--pages">
-            <span>Pages</span>
+            <span contenteditable="true" class="main__card--pages">Pages</span>
           </div>
           <div class="main__card-box main__card-box--status">
-            <button class="">Read</button>
+            <button class="main__card--status">Read</button>
           </div>
           <div class="main__card-box main__card-box--delete">
-            <button class="">Delete</button>
-          </div>
-        </div>
-
-        <div class="main__card">
-          <div class="main__card-box main__card-box--book">
-            <span>Book</span>
-          </div>
-          <div class="main__card-box main__card-box--author">
-            <span>Author</span>
-          </div>
-          <div class="main__card-box main__card-box--pages">
-            <span>Pages</span>
-          </div>
-          <div class="main__card-box main__card-box--status">
-            <button class="">Read</button>
-          </div>
-          <div class="main__card-box main__card-box--delete">
-            <button class="">Delete</button>
-          </div>
-        </div>
-
-        <div class="main__card">
-          <div class="main__card-box main__card-box--book">
-            <span>Book</span>
-          </div>
-          <div class="main__card-box main__card-box--author">
-            <span>Author</span>
-          </div>
-          <div class="main__card-box main__card-box--pages">
-            <span>Pages</span>
-          </div>
-          <div class="main__card-box main__card-box--status">
-            <button class="">Read</button>
-          </div>
-          <div class="main__card-box main__card-box--delete">
-            <button class="">Delete</button>
-          </div>
-        </div>
-
-        <div class="main__card">
-          <div class="main__card-box main__card-box--book">
-            <span>Book</span>
-          </div>
-          <div class="main__card-box main__card-box--author">
-            <span>Author</span>
-          </div>
-          <div class="main__card-box main__card-box--pages">
-            <span>Pages</span>
-          </div>
-          <div class="main__card-box main__card-box--status">
-            <button class="">Read</button>
-          </div>
-          <div class="main__card-box main__card-box--delete">
-            <button class="">Delete</button>
-          </div>
-        </div>
-
-        <div class="main__card">
-          <div class="main__card-box main__card-box--book">
-            <span>Book</span>
-          </div>
-          <div class="main__card-box main__card-box--author">
-            <span>Author</span>
-          </div>
-          <div class="main__card-box main__card-box--pages">
-            <span>Pages</span>
-          </div>
-          <div class="main__card-box main__card-box--status">
-            <button class="">Read</button>
-          </div>
-          <div class="main__card-box main__card-box--delete">
-            <button class="">Delete</button>
-          </div>
-        </div>
-
-        <div class="main__card">
-          <div class="main__card-box main__card-box--book">
-            <span>Book</span>
-          </div>
-          <div class="main__card-box main__card-box--author">
-            <span>Author</span>
-          </div>
-          <div class="main__card-box main__card-box--pages">
-            <span>Pages</span>
-          </div>
-          <div class="main__card-box main__card-box--status">
-            <button class="">Read</button>
-          </div>
-          <div class="main__card-box main__card-box--delete">
-            <button class="">Delete</button>
-          </div>
-        </div>
-
-        <div class="main__card">
-          <div class="main__card-box main__card-box--book">
-            <span>Book</span>
-          </div>
-          <div class="main__card-box main__card-box--author">
-            <span>Author</span>
-          </div>
-          <div class="main__card-box main__card-box--pages">
-            <span>Pages</span>
-          </div>
-          <div class="main__card-box main__card-box--status">
-            <button class="">Read</button>
-          </div>
-          <div class="main__card-box main__card-box--delete">
-            <button class="">Delete</button>
+            <button class="main__card--delete">Delete</button>
           </div>
         </div>
       </main>
     </div>
-    <script src="/dist/bundle.js"></script>
-    <!-- <script src="/src/app.js"></script> -->
+    <!-- <script src="/dist/bundle.js"></script> -->
+    <script src="/src/app.js"></script>
   </body>
 </html>
