@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>Library</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <div class="container">
+      <header class="header header__container" id="headerContainer">
+        <div class="header__logo"><h1>My Library</h1></div>
+        <form action="#" method="post" class="header__form" autocomplete="off">
+          <div class="header__form-el header__form--hide">
+            <input
+              type="text"
+              name="book"
+              class="header__form-book"
+              id="formBook"
+              placeholder="Book"
+            />
+          </div>
+          <div class="header__form-el header__form--hide">
+            <input
+              type="text"
+              name="author"
+              class="header__form-author"
+              id="formAuthor"
+              placeholder="Author"
+            />
+          </div>
+          <div class="header__form-el header__form--hide">
+            <input
+              type="text"
+              name="pages"
+              class="header__form-pages"
+              id="formPages"
+              placeholder="Pages"
+            />
+          </div>
+          <div class="header__form-el header__form--hide">
+            <button class="header__form-status" id="formBtnStatus">Read</button>
+          </div>
+          <button class="header__form-btn" id="btnAddBook">
+            <svg
+              width="31"
+              height="31"
+              viewBox="0 0 31 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.1217 13.9483L17.0383 13.955L17.0317 10.8717C17.0308 10.4628 16.8675 10.071 16.5778 9.78254C16.288 9.49405 15.8955 9.33247 15.4867 9.33335C15.0778 9.33424 14.686 9.49751 14.3975 9.78725C14.109 10.077 13.9475 10.4695 13.9483 10.8783L13.955 13.9617L10.8717 13.9683C10.4628 13.9692 10.071 14.1325 9.78253 14.4222C9.49404 14.712 9.33246 15.1045 9.33335 15.5133C9.33423 15.9222 9.4975 16.314 9.78724 16.6025C10.077 16.891 10.4695 17.0526 10.8783 17.0517L13.9617 17.045L13.9683 20.1283C13.9692 20.5372 14.1325 20.929 14.4222 21.2175C14.712 21.506 15.1045 21.6675 15.5133 21.6667C15.9222 21.6658 16.314 21.5025 16.6025 21.2128C16.891 20.923 17.0525 20.5305 17.0517 20.1217L17.045 17.0383L20.1283 17.0317C20.5372 17.0308 20.929 16.8675 21.2175 16.5778C21.506 16.288 21.6675 15.8956 21.6667 15.4867C21.6658 15.0778 21.5025 14.686 21.2128 14.3975C20.923 14.109 20.5305 13.9475 20.1217 13.9483ZM1.65835 30.9466L29.4083 30.8866C29.8172 30.8858 30.2089 30.7225 30.4974 30.4327C30.7859 30.143 30.9475 29.7505 30.9466 29.3417L30.8866 1.59172C30.8858 1.18284 30.7225 0.791063 30.4327 0.502571C30.143 0.214076 29.7505 0.0525003 29.3416 0.0533841L1.59171 0.113364C1.18283 0.114248 0.791053 0.277519 0.502561 0.567263C0.214067 0.857005 0.0524907 1.24949 0.0533745 1.65836L0.113355 29.4083C0.114238 29.8172 0.27751 30.2089 0.567254 30.4974C0.856996 30.7859 1.24948 30.9475 1.65835 30.9466ZM3.14003 3.19336L27.8066 3.14004L27.86 27.8067L3.19335 27.86L3.14003 3.19336Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </form>
+      </header>
+      <main class="main__container" id="mainContainer">
+        <div class="main__card" id="mainCard">
+          <div class="main__card-box main__card-box--book">
+            <span class="main__card--book" contenteditable="true">Book</span>
+          </div>
+          <div class="main__card-box main__card-box--author">
+            <span class="main__card--author" contenteditable="true"
+              >Author</span
+            >
+          </div>
+          <div class="main__card-box main__card-box--pages">
+            <span contenteditable="true" class="main__card--pages">Pages</span>
+          </div>
+          <div class="main__card-box main__card-box--status">
+            <button class="main__card--status">Read</button>
+          </div>
+          <div class="main__card-box main__card-box--delete">
+            <button class="main__card--delete">Delete</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- <script src="/dist/bundle.js"></script> -->
+    <script src="/src/app.js"></script>
+  </body>
+</html>
